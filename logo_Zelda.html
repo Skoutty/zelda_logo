@@ -1,0 +1,32 @@
+<canvas width= "250" height = "200"></canvas>
+<script>
+    var logo = document.querySelector('canvas');
+    var desenho = logo.getContext('2d');
+//fundo
+desenho.fillStyle = 'gold';
+desenho.fillRect(0,0, 250,200);
+
+//Triângulo centro
+desenho.fillStyle = 'white';
+desenho.beginPath();
+desenho.moveTo(125,200);
+desenho.lineTo(190,105);
+desenho.lineTo(60,105);
+desenho.fill();
+
+//Triângulo canto direito
+desenho.fillStyle = 'white';
+desenho.beginPath();
+desenho.moveTo(125,0);
+desenho.lineTo(250,200);
+desenho.lineTo(250,0);
+desenho.fill();
+
+//Triângulo canto esquerdo
+desenho.fillStyle = 'white';
+desenho.beginPath();
+desenho.moveTo(125,0);
+desenho.lineTo(0,200);
+desenho.lineTo(0,0);
+desenho.fill();
+</script>
